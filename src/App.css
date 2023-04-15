@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    background: #000 url('./Assets/bg.jpg') no-repeat;
+}
+
+.transform-style-preserve3D {
+    transform-style: preserve-3d;
+}
+
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.transition-transform-0_8 {
+    transition: transform 0.8s;
+}
+
+.transform-rotateY {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.back-visibility {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+li {
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
